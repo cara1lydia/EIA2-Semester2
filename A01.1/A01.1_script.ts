@@ -1,7 +1,7 @@
 namespace randomPoem {
 let subject: string[] = ["Pippilotta", "Viktualia", "Rollgardina", "Pfefferminz", "Efraimstochter", "Langstrumpf"];
-let attribute: string[] = ["macht", "multipliziert", "schenkt", "reitet", "streicht", "segelt"];
-let object: string[] = ["was ihr gefällt", "Koffer voller Gold", "kunterbunte Häuser", "kleiner Onkel", "Herr Nilsson", "ins Taka-Tuka-Land"];
+let attribute: string[] = ["findet", "multipliziert", "verschenkt", "reitet", "pflechtet", "segelt"];
+let object: string[] = ["was ihr gefällt", "Koffer voller Gold", "kunterbunte Häuser", "kleiner Onkel", "Herr Nilsson", "Zöpfe"];
 
 for (let i: number = 5; i >= 0; i--) {
     let verse: string[] = getVerse(subject, attribute, object);
