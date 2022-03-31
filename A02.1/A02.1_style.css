@@ -1,0 +1,29 @@
+h1 {
+    font-style: oblique;
+}
+
+.div0 {
+    border: 1px solid black;
+    height: 600px;
+    width: 700px;
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+
+.div1 {
+    border: 1px solid black;
+    height: 600px;
+    width: 700px;
+    position: relative;
+    left: 800px;
+    top: -562px;
+}
+
+.position {
+    border: 1px solid black;
+    position: fixed;
+    background-color: rgb(163, 163, 163);
+    
+
+}

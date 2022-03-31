@@ -1,8 +1,8 @@
 var randomPoem;
 (function (randomPoem) {
     let subject = ["Pippilotta", "Viktualia", "Rollgardina", "Pfefferminz", "Efraimstochter", "Langstrumpf"];
-    let attribute = ["macht", "multipliziert", "schenkt", "reitet", "streicht", "segelt"];
-    let object = ["was ihr gefällt", "Koffer voller Gold", "kunterbunte Häuser", "kleiner Onkel", "Herr Nilsson", "ins Taka-Tuka-Land"];
+    let attribute = ["findet", "multipliziert", "verschenkt", "reitet", "pflechtet", "segelt"];
+    let object = ["was ihr gefällt", "Koffer voller Gold", "kunterbunte Häuser", "kleiner Onkel", "Herr Nilsson", "Zöpfe"];
     for (let i = 5; i >= 0; i--) {
         let verse = getVerse(subject, attribute, object);
         console.log(verse);
