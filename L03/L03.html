@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Settings</title>
+    <script src="./L03_script.js"></script>
+    <link rel="stylesheet" href="./L03_style.css">
+</head>
+<body>
+    <h1>MEMORY</h1>
+    <div id="wrapper">
+        <form>
+            <h2>MAKE THE GAME YOUR OWN</h2>
+            <div id="formDiv">
+                <fieldset>
+                    <legend>With how many cards do you wanna play?</legend>
+                    <input type="number" name="cardAmount" id="cardAmount" min="10" max="50" step="2" value="10">
+                </fieldset>
+                    <br>
+                <fieldset>   
+                    <legend>How big should the cards be?</legend>
+                    small
+                    <input type="range" name="cardSize" id="cardSize" min="50" max="100" step="10">
+                    big
+                </fieldset>  
+                    <br>
+                <fieldset>   
+                    <legend>What color should they have?</legend>
+                    <input type="color" name="cardColor" id="cardColor" value="#417a4e">
+                </fieldset> 
+                    <br>
+                <fieldset>
+                    <legend>What color should your background be?</legend>
+                    <input type="color" name="backColor" id="backColor" value="#e7d7a9">
+                    </fieldset>
+                    <br>
+                <fieldset>
+                    <legend>What about the color of the font?</legend>
+                    <input type="color" name="fontColor" id="fontColor" value="#ffffff">
+                </fieldset>
+                    <br>
+                <fieldset id="fontStyle">  
+                    <legend>And what font should we use?</legend>
+                    <input type="radio" name="fontStyle" id="fontStyle1" value="'Courier New', Courier, monospac">
+                        <label for="fontStyle1" id="font1">Courier New</label>
+                        <br>
+                    <input type="radio" name="fontStyle" id="fontStyle2" value="Times, 'Times New Roman', Georgia, serif">
+                        <label for="fontStyle2" id="font2">Times New Roman</label>
+                        <br>
+                    <input type="radio" name="fontStyle" id="fontStyle3" value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                        <label for="fontStyle3" id="font3">Franklin Gothic Medium</label>
+                </fieldset>  
+            </div>
+        </form>
+        <br>
+        <button id="btnStart">START YOUR GAME</button>
+    </div>
+
+</body>
+</html>
