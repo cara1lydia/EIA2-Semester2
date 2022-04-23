@@ -16,13 +16,13 @@
             <div id="formDiv">
                 <fieldset>
                     <legend>With how many cards do you wanna play?</legend>
-                    <input type="number" name="cardAmount" id="cardAmount" min="10" max="50" step="2" value="10">
+                    <input type="number" name="cardAmount" id="cardAmount" min="5" max="25" step="1" value="10">
                 </fieldset>
                     <br>
                 <fieldset>   
                     <legend>How big should the cards be?</legend>
                     small
-                    <input type="range" name="cardSize" id="cardSize" min="50" max="100" step="10">
+                    <input type="range" name="cardSize" id="cardSize" min="200" max="500" step="50">
                     big
                 </fieldset>  
                     <br>
@@ -43,7 +43,7 @@
                     <br>
                 <fieldset id="fontStyle">  
                     <legend>And what font should we use?</legend>
-                    <input type="radio" name="fontStyle" id="fontStyle1" value="'Courier New', Courier, monospac">
+                    <input type="radio" name="fontStyle" id="fontStyle1" value="'Courier New', Courier, monospac" checked="checked">
                         <label for="fontStyle1" id="font1">Courier New</label>
                         <br>
                     <input type="radio" name="fontStyle" id="fontStyle2" value="Times, 'Times New Roman', Georgia, serif">
@@ -54,7 +54,6 @@
                 </fieldset>  
             </div>
         </form>
-        <br>
         <button id="btnStart">START YOUR GAME</button>
     </div>
 
