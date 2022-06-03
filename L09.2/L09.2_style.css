@@ -1,0 +1,14 @@
+body {
+    align-items: center;
+}
+
+canvas {
+    position: absolute;
+    left: 13%;
+    top: 7%;
+    border: 30px;
+    border-color: rgb(255, 135, 66);
+    border-radius: 10px;
+    border-style: groove;
+
+}
