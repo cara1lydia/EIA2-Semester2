@@ -26,18 +26,20 @@ namespace BeachAnimation {
         drawSand(canvas.width, -0.25 * canvas.height);
         drawRocks(canvas.width * - 0.1, canvas.height * 0.8, 50, 150,);
 
+        let imgData: ImageData = crc2.getImageData(0, 0, crc2.canvas.width, crc2.canvas.height); 
+
         objects();
 
-        let imgData: ImageData = crc2.getImageData(0, 0, crc2.canvas.width, crc2.canvas.height);
+        
 
         function objects(): void {
             drawCloud(crc2.canvas.width * 0.3, crc2.canvas.height * - 0.2, -0.5);
             drawCloud(crc2.canvas.width * 0.6, crc2.canvas.height * - 0.05, -0.3);
             drawCloud(crc2.canvas.width * - 0.1, crc2.canvas.height * - 0.1, 0.6);
             drawCloud(crc2.canvas.width * 0.1, crc2.canvas.height * 0.1, 0.4);
-            drawSeagull(crc2.canvas.width * 0.2, crc2.canvas.height * - 0.1, 5, 5);
-            drawSeagull(crc2.canvas.width * 0.5, crc2.canvas.height * 0.1, 10, 10);
-            drawSeagull(crc2.canvas.width * 0.7, crc2.canvas.height * - 0.2, 20, 20);
+            drawSeagull(crc2.canvas.width * 0.2, crc2.canvas.height * - 0.1, 0.1, 0.1);
+            drawSeagull(crc2.canvas.width * 0.5, crc2.canvas.height * 0.1, 0.5, 0.5);
+            drawSeagull(crc2.canvas.width * 0.7, crc2.canvas.height * - 0.2, 0.3, 0.3);
             for (let i: number = 0; i < 10; i++) {
                 drawPeople(crc2.canvas.width * Math.random(), crc2.canvas.height * 0.2 + Math.random() * crc2.canvas.height * 0.2, Math.random() * 5, Math.random() * 5);
             }
@@ -65,8 +67,13 @@ namespace BeachAnimation {
                 }
 
                 requestAnimationFrame(drawScene);
+                console.log(drawScene);
+                
             }
+            
         }
+
+        
 
         function drawBackground(_x: number, _y: number): void {
 

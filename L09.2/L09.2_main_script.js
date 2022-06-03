@@ -21,16 +21,16 @@ var BeachAnimation;
         drawWater();
         drawSand(canvas.width, -0.25 * canvas.height);
         drawRocks(canvas.width * -0.1, canvas.height * 0.8, 50, 150);
-        objects();
         let imgData = BeachAnimation.crc2.getImageData(0, 0, BeachAnimation.crc2.canvas.width, BeachAnimation.crc2.canvas.height);
+        objects();
         function objects() {
             drawCloud(BeachAnimation.crc2.canvas.width * 0.3, BeachAnimation.crc2.canvas.height * -0.2, -0.5);
             drawCloud(BeachAnimation.crc2.canvas.width * 0.6, BeachAnimation.crc2.canvas.height * -0.05, -0.3);
             drawCloud(BeachAnimation.crc2.canvas.width * -0.1, BeachAnimation.crc2.canvas.height * -0.1, 0.6);
             drawCloud(BeachAnimation.crc2.canvas.width * 0.1, BeachAnimation.crc2.canvas.height * 0.1, 0.4);
-            drawSeagull(BeachAnimation.crc2.canvas.width * 0.2, BeachAnimation.crc2.canvas.height * -0.1, 5, 5);
-            drawSeagull(BeachAnimation.crc2.canvas.width * 0.5, BeachAnimation.crc2.canvas.height * 0.1, 10, 10);
-            drawSeagull(BeachAnimation.crc2.canvas.width * 0.7, BeachAnimation.crc2.canvas.height * -0.2, 20, 20);
+            drawSeagull(BeachAnimation.crc2.canvas.width * 0.2, BeachAnimation.crc2.canvas.height * -0.1, 0.1, 0.1);
+            drawSeagull(BeachAnimation.crc2.canvas.width * 0.5, BeachAnimation.crc2.canvas.height * 0.1, 0.5, 0.5);
+            drawSeagull(BeachAnimation.crc2.canvas.width * 0.7, BeachAnimation.crc2.canvas.height * -0.2, 0.3, 0.3);
             for (let i = 0; i < 10; i++) {
                 drawPeople(BeachAnimation.crc2.canvas.width * Math.random(), BeachAnimation.crc2.canvas.height * 0.2 + Math.random() * BeachAnimation.crc2.canvas.height * 0.2, Math.random() * 5, Math.random() * 5);
             }
@@ -51,6 +51,7 @@ var BeachAnimation;
                     peopleA[i].draw();
                 }
                 requestAnimationFrame(drawScene);
+                console.log(drawScene);
             }
         }
         function drawBackground(_x, _y) {
